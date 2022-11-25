@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/StyleL&S.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+    <script>
+         function printmessage(id,msg)
+        {
+          document.getElementById(id).innerHTML=msg;
+        }
+        
+        function validate()
+        {	
+            var confirmpasserr=true;
+           
+           
+             if ( document.signup.confirmpassword.value != document.signup.password.value)
+                {
+                    printmessage("confirmpasserr"," New and ConfirmPassword are not same !!");	
+                    document.signup.confirmpassword.focus();		
+                    return false;
+                }
+                   
+                
+             return true;
+          
+        
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <form  name="signup" action="Signup" method="post" onsubmit="return validate()" class="container">
+            <h1>Signup </h1>
+            <div>
+                <label for="">First Name</label>
+                <input type="text" name="firstname" placeholder="Enter your first name" required>
+            </div>
+            <div>
+                <label for="">Last Name</label>
+                <input type="text" name="lastname" placeholder="Enter your last name" required>
+            </div>
+            <div>
+                <label for="">Username</label>
+                <input type="text" name="username"  placeholder="Enter your Username" required>
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <div>
+                <label for="">Confirm Password</label>
+                <input type="password" name="confirmpassword" placeholder="Enter Confirm password" required>
+                <div id="confirmpasserr"></div>
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="">Phone No</label>
+                <input type="text" name="phoneno" placeholder="Enter your phoneno" required>
+            </div>
+            <div>
+                <button type="submit"  class="btn">Signup</button>
+            </div>
+            <div>
+                <label for="">Already have an account?</label>
+                <a href="Login.html">Login</a>
+            </div>
+        </form>
+    </center>
+</body>
+</html>

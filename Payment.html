@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+
+    <link rel="stylesheet" href="css\StyleL&S.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="top">Payment Method</h1>
+    <div class="box-container">
+
+     
+        
+        <form name="debitcard" action="Debitcard" method="post" class="container">
+
+            <h1>Debit Card</h1>
+            <div>
+                <label for=""> Your Name on Card</label>
+                <input type="text" name="name" required placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="">Card Number</label>
+                <input type="numeric" name="cardno" required placeholder="Enter Card number">
+
+            </div>
+           
+            <div>
+                <label for="">CVC</label>
+                <input type="numeric" name="cvc" required placeholder="Enter CVC">
+            </div>
+            <div>
+                <label for="">Expiry Date</label>
+                <input type="date" name="expirydate" id="" required placeholder="Enter Expiry date of card">
+            </div>
+            <div>
+                <label for="">Total Payment</label>
+                <input type="text" name="payment" required placeholder="Enter your Payment">
+            </div>
+            <div>
+                <label for="">Billing Address</label>
+                <input type="text" name="billaddress" required placeholder="Enter billing address">
+            </div>
+            <div>
+                <button class="btn" >Pay</button>
+            </div>
+           
+        </form>
+        <form name="jazzcash" action="Jazzcash" method="post" class="container">
+            <h1>JazzCash</h1>
+            <p class="para">Jazzcash your payment at this number :03XXXXXXXXX <br>After payment confirm your trip by filling the below form.</p>
+            <div>
+                <label for="">Owner Name</label>
+                <input type="text" name="owner" required placeholder="Enter Account owner">
+
+            </div>
+            <div>
+                <label for="">TID</label>
+                <input type="text" name="tid" required placeholder="Enter your TID">
+            </div>
+            <div>
+                <label for="">Total Payment</label>
+                <input type="text" name="payment" required placeholder="Enter your Payment">
+            </div>
+          
+            
+            <div>
+                <button class="btn" >Pay</button>
+            </div>
+           
+              
+            
+        </form>
+    </div>
+   
+</body>
+</html>

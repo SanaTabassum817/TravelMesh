@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Trip</title>
+    <script src="Script.jss"></script>
+
+    <link rel="stylesheet" href="css\StyleL&S.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+</head>
+<body >
+    <center>
+        <form name="booking" action="Booking" method="post" class="container" >
+            <h1>Trip Booking</h1>
+            <div>
+                <label for="">First Name</label>
+                <input type="text" name="firstname" required placeholder="Enter your first name">
+
+            </div>
+            <div>
+                <label for="">Last Name</label>
+                <input type="text" name="lastname" required placeholder="Enter your last name" >
+
+            </div>
+          
+            <div>
+                <label for="">Address</label>
+                <input type="text" name="address" id="" required placeholder="Enter your address">
+            </div>
+            <div>
+                <label for="">Phone No</label>
+                <input type="text" name="phoneno" id="" placeholder="(0000) 0000000" required aria-placeholder="Enter your phoneno">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="" required placeholder="Enter your email">
+            </div>
+            <div>
+                <label for=""> Trip Place</label>
+                 <select name="location" id="" >
+                     <option class="opt" value="Lahore">Lahore</option>
+                     <option  class="opt"  value="Islamabad">Islamabad</option>
+                     <option class="opt"  value="Chitral">Chitral</option>
+                     <option class="opt"  value="Swat-Valley">Swat Valley</option>
+                     <option class="opt"  value="Murree">Murree</option>
+                     <option class="opt"  value="Naran-Kagan">Naran Kagan</option>
+                     <option  class="opt" value="Skardu">Skardu</option>
+                     <option class="opt"  value="Hunza">Hunza</option>
+                                                                     
+                 </select>
+            </div>
+            <div>
+                <label for=""> Trip Id</label>
+                 <select name="tripid" id="" >
+                     <option class="opt"  value="LH01">LH01</option>
+                     <option class="opt" value="IB02">IB02</option>
+                     <option class="opt"  value="CT03">CT03</option>
+                     <option class="opt" value="ST04">ST04</option>
+                     <option class="opt" value="MU05">MU05</option>
+                     <option class="opt" value="NK06">NK06</option>
+                     <option class="opt"  value="SK07">SK07</option>
+                     <option class="opt" value="HU08">HU08</option>
+                                                                     
+                 </select>
+            </div>
+          
+            <div>
+                <label for="">Seats</label>
+                <input type="number" name="seats" id="" required placeholder="Enter number of seats">
+            </div>
+           
+            <div>
+                <button class="btn" type="submit" >Checkout</button>
+               
+            </div>
+        </form>
+    </center>
+</body>
+</html>
